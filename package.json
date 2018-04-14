@@ -1,0 +1,20 @@
+{
+  "name": "markme",
+  "version": "1.0.0",
+  "description": "Easier way for police forces to use tips to find missing suspects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Police",
+    "UVA.hacks"
+  ],
+  "author": "Lars E. Schonander",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,18 @@
+
+<h1>Missing Persons Tips List </h1>
+
+<% personsLost.forEach(function(personsLost){ %>
+    <div id="container">
+        <div> <%= personsLost.firstName %> - <%= personsLost.lastName %> is missing. They were last seen on <%= personsLost.lastSeen %> 
+            Tips: <%= personsLost.notes %> </div> 
+    </div>
+<% }) %>
+
+<form action="/newmissing" method="POST">
+    <input type = "text" name = "newmissingfname" placeholder="first name">
+    <input type = "text" name = "newmissinglname" placeholder="last name"> 
+    <input type="date" name = "datesighted" placeholder="Last Sighted">
+    <textarea name = "tips" placeholder="Any information?"></textarea>
+    <button>Add new tip</button>
+
+</form>
