@@ -1,2 +1,2 @@
 # MarkMe
-Turning hackathon project into actual useable software
+Turning hackathon project at UVA.hacks into actual useable software
