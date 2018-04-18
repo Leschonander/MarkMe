@@ -4,8 +4,8 @@ var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://MYSELF:6lkp7DfBIKpoj57q@markmedatabase-4yie0.mongodb.net/test');
-var uri = "mongodb+srv://MYSELF:6lkp7DfBIKpoj57q@markmedatabase-4yie0.mongodb.net/test";
+mongoose.connect('mongodb+srv://'); //YOUR NOT GETTING THIS INFO
+var uri = "mongodb+srv://; //NOT YOUR DATABASE
 MongoClient.connect(uri, function(err, client) {
    const collection = client.db("test").collection("devices");
    // perform actions on the collection object
