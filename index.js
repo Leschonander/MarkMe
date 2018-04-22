@@ -4,8 +4,8 @@ var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://'); //YOUR NOT GETTING THIS INFO
-var uri = "mongodb+srv://; //NOT YOUR DATABASE
+mongoose.connect('mongodb+srv://MYSELF:6lkp7DfBIKpoj57q@markmedatabase-4yie0.mongodb.net/test');
+var uri = "mongodb+srv://MYSELF:6lkp7DfBIKpoj57q@markmedatabase-4yie0.mongodb.net/test";
 MongoClient.connect(uri, function(err, client) {
    const collection = client.db("test").collection("devices");
    // perform actions on the collection object
@@ -42,11 +42,11 @@ app.get('/missing', function(req, res){
     });
 });
 
-app.get('/newmissing', function(req, res){
+app.get('/missing/new', function(req, res){
     res.render('Newmissing')
 })
 
-app.post('/newmissing', function(req, res){
+app.post('/missing/new', function(req, res){
     var newFMissing = req.body.newmissingfname
     var NewLMissing = req.body.newmissinglname
     var datelastsighted = req.body.datesighted
