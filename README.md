@@ -6,7 +6,7 @@ In index some code is deleted due to it involving information that i'd rather no
 Built with:
   1. Express.js
   2. MongoDB + Mongoose
-  3. semantic-Ui
+  3. semantic-ui
 
 Link below is to what the input menu looks like at the moment.
 [Imgur](https://i.imgur.com/lO3YuEw.png)
